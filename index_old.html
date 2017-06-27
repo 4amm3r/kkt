@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Kitty Kat Time - Eastside Cat Sitting</title>
+	<meta name="description" content="Whole-hearted cat sitting on Seattle's Eastside (Bothell, Kenmore, Woodinville)">
+	<meta name="author" content=" Made by Nadia Tufnell">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/hammer-time.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+            
+                // create a simple instance
+                // by default, it only adds horizontal recognizers
+                $('.galleryimg').on('dragstart', function(event) { event.preventDefault(); });
+            
+                var myElement = document.getElementById('bigimages');
+            
+                var mc = new Hammer(myElement);
+
+                // listen to events...
+                mc.on("swiperight swipeleft", function(ev) {
+                    if(ev.type == "swiperight"){        
+                        changeImage(currentImage-1)
+                    }
+                    else if(ev.type == "swipeleft"){
+                        changeImage(currentImage+1)
+                    }
+                });
+				$("a[rel=cat_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		});
+	</script>
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-80188837-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=164835066934146";
+ 	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+</head>
+<body>
+
+
+	<header>			
+		<nav>
+			<div class='container'>
+				<div class='fourteen columns'>
+					<ul class='mainMenu'>
+						<li><a href='index.html' title='Home'><img class='logobutton' src='images/misc/KittyKatTimeTransparent.png'></a></li>
+                        <li><a href='index.html' title='Kitty Kat Time'>Kitty Kat Time</a></li>
+						<li><a href='#about' title='About Us'>About Us</a></li>
+						<li><a href='#services' title='Services'>Services</a></li>
+<!--						<li><a href='#faq' title='Frequently Asked Questions'>FAQ</a></li>-->
+						<li><a href='#contact' title='Contact Us'>Contact Us</a></li>
+                        <br><br><br>
+                        <li class='subtext'>Whole-hearted cat sitting on Seattle's Eastside</li>
+<!--						<li><a href='#testimonials' title='Testimonials'>Testimonials</a></li>-->
+					</ul>
+                    
+				</div>
+                
+			</div>
+		</nav>
+
+<!--
+		<div class='container'>
+			<div class='slogan'>
+				<div class='nine columns logo'>
+					<img src='images/misc/KittyKatTimeTransparent.png'>
+				</div>
+
+				<div class='seven columns intro'>
+					<h2>Welcome to Kitty Kat Time!</h2><br/><br/><br/>
+					<p>We offer whole-hearted cat sitting services on Seattle's Eastside.</p>
+					<a href='#services' class='button medium green'>See my services</a>
+				</div>
+			</div>
+		</div>	
+-->
+	</header>
+
+	<div class='clear'></div>
+
+    <div class='intro'>
+        <div class='container focus about'>
+            <img class='introimg' src="images/photos/AllYouNeedIsCat.png"/>
+        </div>
+    </div>
+    <div class='aboutus'>
+		<div class='container focus about'>
+			<p>Kitty Kat Time is a one-person owned and operated cat sitting business, providing in-home cat care while you're away, with an emphasis on your cat's health and wellbeing. I bring my own toys to initiate playtime and encourage exercise, which promote better sleep. I offer your cat healthy treats, like raw, freeze-dried treats and catnip. To help calm your cat, I provide music specially made for cats. I also provide any home care needed (getting the mail, watering plants, etc.) and send you text updates with pictures of your furry family member. I love getting to know every cat I meet and enjoy learning about his/her needs and unique personality. Hearing those satisfying purrs is music to my ears!<br/><br/>I am licensed, bonded, and insured and am certified in pet CPR and first aid.</p><br/>
+		</div>
+		<div class='eight columns icons'>
+            <a class="widget ng-scope" ng-href="https://www.thumbtack.com/-Bothell-WA/service/2434342" target="_blank" href="https://www.thumbtack.com/-Bothell-WA/service/2434342"> <img style="height: 128px;width: 128px;" ng-src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/orange/2016.svg" src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/pro-svg/orange/2016.svg"></a><script type='text/javascript' src='https://www.thumbtack.com/profile/widgets/scripts/?service_id=:Ci9bfFTDWYZbQ&widget_id=profile'></script>
+            <a href="http://www.petsitllc.com/pet_sitter_profile.phtml/A9BB6188C9/bothell/wa/kitty_kat_time/"><img src="images/misc/pet_sitters_logo.png"></a>
+            </div>
+	</div>
+    <div class='clear'></div>
+	<div class='aboutus' id='about'>
+		<div class='container focus about'>
+			<img class='aboutphoto' src="images/photos/nadiaanddixie.jpg"/>
+            <br> <br> <br>
+			<p>My name is Nadia, and ever since I was little, animals have been my passion! I grew up with frogs, fish, and guinea pigs. I got my first cat when I was 6 and named her Snowflake. She was a gorgeous part Siamese/tabby cat. She experienced a lot in her 16 years on earth and even moved 3,000 miles across the country with me. Snowflake started my love for cats, and in high school I began volunteering at cat shelters. I was a cat care specialist volunteer for the Northwest Organization for Animal Help (NOAH) and volunteered with the Everett Animal Shelter as a cat room assistant.
+I got my Bachelor of Science degree in Animal Behavior and then became an independent contractor with two pet service companies, providing cat/small animal visits, overnight pet care, dog walking, and puppy training. I have experience with farm animals from working on a horse farm, interning at Farm Sanctuary’s Animal Acres, and volunteering at Pasado’s Safe Haven. I also volunteered at Sarvey Wildlife Care, helping to rehabilitate wild animals. 
+<br>
+I currently have two cats named Popoki and Dixie Rose.
+            <br><br>
+            </p>            
+<!--
+			<img class='aboutphoto' src="images/photos/snowflake.jpg"/>
+            <p>Snowflake</p>
+-->
+            <div id="gallery">
+                <table class="photogallery">
+                    <tr>
+                        <td>
+                            <div id="thumbs" class="photogallery">
+                                <a href="javascript: changeImage(1);"><img src="images/photos/snowflake-thumb.jpg" alt="" /></a>
+                                <a href="javascript: changeImage(2);"><img src="images/photos/dixiecouch-thumb.jpg" alt="" /></a>
+                                <a href="javascript: changeImage(3);"><img src="images/photos/popoki-thumb.jpg" alt="" /></a>
+                            </div>                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="photogallery">
+                            <div id="bigimages">
+                                <div class="galimgdiv" id="normal1">
+                                    <img class="galleryimg" src="images/photos/snowflake.jpg" alt=""/>
+                                    <p>Snowflake</p>
+                                </div>
+
+                                <div class="galimgdiv" id="normal2">
+                                    <img class="galleryimg" src="images/photos/dixiecouch.jpg" alt=""/>
+                                    <p>Dixie</p>
+                                </div>
+
+                                <div class="galimgdiv" id="normal3">
+                                    <img class="galleryimg" src="images/photos/popoki.jpg" alt=""/>
+                                    <p>Popoki</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id='services'>
+                </div>
+            </div>
+
+        </div>
+	</div>
+
+	<div class="pink">
+        <div class='container'>
+            <h3 class='pagetitle'>Services</h3><br>
+            <div class='sixteen columns'>
+                <h4>Mini Cat Visits</h4><br>
+                <p>&#10084;  $10 per visit<br>
+                Is your cat alone all day while you're at work? I offer mini day visits to give your cat love and attention! I bring 		   interactive toys, healthy raw freeze-dried treats, catnip, and cat music. I also freshen the litterbox, provide brushing, 			   administer medication, etc.<br><br>
+                &#9835;  <a href="http://www.musicforcats.com/#new-album-section">Click here to listen to a sample of Music For Cats!</a>  &#9835;
+                </p>
+            </div>
+            <div class='clear'></div>
+	    <div class='sixteen columns'>
+                <h4>Cat Visits</h4><br>
+                <p>&#10084;  $21 per 30 minute visit<br> 
+                   &#10084;  $35 for two 30 minute visits a day<br>	
+                   &#10084;  $30 per 60 minute visit<br>
+                   All inclusive cat care and home care.
+                   </p>
+            </div>
+            <div class='clear'></div>
+            <div class='sixteen columns'>
+                <h4>Other Animal Visits</h4><br>
+                <p>&#10084;  $10 - $21 per visit (depending on length of visit)<br>
+                Fish, small animals, farm animals, etc.                 
+                </p>
+            </div>
+
+            <div class='clear'></div>
+            
+            <div class='sixteen columns'>
+                <h4>Meet and Greet</h4><br>
+                <p>Before we start any services, we schedule a free 30-60 minute consultation to go over your pet's routine and address any questions you may have.<br>
+                </p>
+            </div>
+
+             <div class='clear'></div>
+	     <div class='sixteen columns'>
+                <h4>Custom Greeting Card of Your Pet</h4><br>
+                <p>&#10084; $5 per card<br>
+                On request, a customized greeting card can be made with a glittered photo of your pet.
+                 </p>
+            </div>
+	    <div class='clear'></div>
+            <div class='sixteen columns'>
+                <h4>Overnight Pet Sitting</h4><br>
+                <p>&#10084; $60 per day for all pets (does not include midday visits)<br>
+                &#10084; $75 per day for all pets (includes midday visits)</p>
+            </div>
+
+            <div class='clear'></div>
+            
+            <div class='sixteen columns'>
+                <h4>Additional Services</h4><br>
+                <p>&#10084; $15 for pet taxi services<br>
+                &#10084; $10 for a supply run, plus cost of supplies<br>
+                    &#10084; $10 for lock-out service<br>
+                    &#10084; $35 per hour for an emergency vet trip</p>
+                
+            </div>
+        
+            <div class='clear'></div>
+
+            <div id='contact' class='sixteen columns'>
+                <h4>*Policies</h4><br>
+                <p>&#10084; $15 surcharge for holidays (New Years Eve, New Years Day, Independence Day, Thanksgiving Day, Christmas Eve, Christmas Day).<br>
+                &#10084; Cash, checks, and credit cards accepted. Payment due upon your first date of service.</p>
+            </div>
+		</div>
+	<div id='contact'>
+	</div>
+
+    </div>
+<!--
+
+    <div class="pink" displa>
+        <div id='pricing' class='container'>
+                <h3>FAQ</h3>
+                    <div class='container'>
+                    <div class='eight columns'>
+                        <h4>CAT VISITS</h4>
+                        <p>I offer 30 minute cat visits.</p>
+                    </div>
+
+                    <div class='eight columns'>
+                        <h4>SUPPLY RUNS</h4>
+                        <p>If you are out or low on food and cat litter, I will pick some up.</p>
+                    </div>
+
+                    <div class='clear'></div>
+
+                    <div class='eight columns'>
+                        <h4>SADSADSD</h4>
+                        <p>If you are out or low on food and cat litter, I will pick some up.</p>
+                    </div>
+
+
+                    <div class='eight columns'>
+                        <h4>SADSADSD</h4>
+                        <p>If you are out or low on food and cat litter, I will pick some up.</p>
+                    </div>
+               </div>
+        </div>
+    </div>
+-->
+
+<!--
+	<div class='container'>
+		<div id='contact' class='sixteen columns form'>
+			<h3>Request a consulation!</h3>
+			<p>Write anything that would be helpful for me to know!</p>
+			<form id="contact" name="contact" method="post">
+				<label>Name</label>
+				<input type='text' name='name' placeholder='Name or last name'>
+				<label>Email Address</label>
+				<input type='text' name='mail' placeholder='Your e-mail address'>
+				<label>Phone Number(Optional)</label>
+				<input type='text' name='number' placeholder='Your phone number'>
+				<label>Message</label>
+				<textarea cols='50' rows='15' name='message'></textarea>
+				<input type='submit' value='Request'>
+			</form>
+		</div>
+	</div>
+
+-->
+
+<div class='aboutus'>
+		<div class='container focus about'>
+			<h3 class='pagetitle'>Contact Us</h3>
+			<div class='sixteen columns'>
+                <h4>Phone:</h4>
+                <p>425.772.6811</p>
+            </div>
+            
+	       <div class='clear'></div>
+			<div class='sixteen columns'>
+                <h4>Email:</h4>
+                <p><a href='mailto:nadia@kittykattime.com'>nadia@kittykattime.com</a></p>
+            </div>
+            
+	       <div class='clear'></div>
+            <div align="center">
+			<div class='three columns'>
+				
+					<div id="yelp-biz-badge-plain-7mMPy-Pf194EnYZ7gDDBxg"><a href="http://yelp.com/biz/kitty-kat-time-bothell" target="_blank">Check out Kitty Kat Time on Yelp</a></div><script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-plain-7mMPy-Pf194EnYZ7gDDBxg";g.src = "//yelp.com/biz_badge_js/en_US/plain/7mMPy-Pf194EnYZ7gDDBxg.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>	
+			</div>
+			<div class='two columns'>
+					<div class="widget ng-scope" id="tt-review-widget-one"> <img alt="Thumbtack"       src="https://static.thumbtackstatic.com/media/logos/thumbtack/wordmark.svg" ng-src="https://static.thumbtackstatic.com/media/logos/thumbtack/wordmark.svg"> <div id="tt-dynamic"> <div class="tt-left"> <img src="https://static.thumbtackstatic.com/media/primo/icons/user/50x50.png"></div><div class="tt-right"> <div class="tt-name">Beverly A.</div> <div class="tt-stars"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg"> <img src="https://static.thumbtackstatic.com/media/pages/profile/standard-widgets/review-widget/orange_star.svg">  <span>0d ago</span> </div> <p> Nadia did a fantastic job sitting the kitties for us. </p> <a href="https://www.thumbtack.com/-Bothell-WA/service/2434342">See all reviews</a></div><br> </div> </div><script type='text/javascript' src='https://www.thumbtack.com/profile/widgets/scripts/?service_id=:Ci9bfFTDWYZbQ&widget_id=review&type=one'></script>
+			</div>
+			  <div class='eleven columns'>
+					<div class="fb-like" data-href="https://www.facebook.com/NadiasKittyKatTime/?ref=aymt_homepage_panel" data-width="50" data-layout="standard" data-action="recommend" data-size="large" data-show-faces="true" data-share="true"></div>
+			
+			               </div>
+	</div>
+			
+		</div>
+</div>
+
+	<div class='clear'></div>
+
+	<footer>
+		<div class='container'>
+			
+			<div class='eight columns'>
+				<h5>Kitty Kat Time</h5>
+				<p>Owned and operated by Nadia Tufnell
+				<br><br>
+				 Services offered on the Eastside (Bothell, Kenmore, Lynnwood, Woodinville, Kirkland, Redmond)
+				</p>
+			</div>
+
+			<div class='four columns'>
+				<h5>Contact</h5>
+				<p>You can call us:<br>
+					425-772-6811</p>
+				<p>Or email us at: <a href='mailto:nadia@kittykattime.com'>nadia@kittykattime.com</a></p>
+			</div>
+
+
+		<a id='top' href='#'>&uarr;</a>	
+		</div>
+	</footer>
+	<script type="text/javascript">	
+		var form = $('form');
+	
+		$(document).ready(function(){
+		    form.validate({
+		    	ignore: "",
+	            rules: {
+	            	'message': {
+	                    required: true,	                 
+	                },
+	            	'name': {
+	                    required: true,	                 
+	                },
+	                'mail': {
+	                    required: true,
+	                    email: true
+	                }			                
+	            },
+	            errorPlacement: function(error, element){},
+                submitHandler: function(form) {
+                     $.post("email.php", {
+                        name1: form[0].value,
+                        email1: form[1].value,
+                        message1: form[3].value,
+                        contact1: form[2].value
+                        }, function(data) {
+                        alert(data); // Append returned message to message paragraph.
+                    });
+                }
+		    });
+		  });     
+	</script>
+
+
+	<script type="text/javascript">
+		var toper = $('a#top');
+
+
+		$(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                toper.fadeIn( 200 );
+            } else {
+                toper.fadeOut( 200 );
+            }
+        });
+
+         toper.click(function(){
+        	$('html, body').animate({scrollTop:0}, 500);	        	
+        	return false;
+    	}); 
+	</script>
+
+
+</body>
+</html>
+
+
+<!--	<div class='container'>
+
+		<div class='one-third column'>
+            <img class='thumbnail' src='images/photos/nadiaanddixie.jpg'>
+			<h3>About the Owner</h3>
+			<p>My name is Nadia and I am soooo amazing!</p>
+		</div>
+
+
+		<div class='one-third column'>
+			<div class='one-third column gallery'>
+				<a rel="cat_group" href='images/photos/dixie.jpg'><img src='images/photos/dixie.jpg'></a>
+				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
+				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
+				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
+				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
+				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
+			</div>
+			<h3>My Cats</h3>
+			<p>Pokie and Dixie</p>
+		</div>
+
+
+		<div class='one-third column'>
+			<img class='thumbnail' src='images/misc/KittyKatTimeTransparent.png'>
+			<h3>Our </h3>
+			<p>Kitty Kat Time specializes in cat care, making sure your cat is happy, safe, and comfortable while you're away. We offer ample playtime, attention, and lots of love! At the end of each visit, we send you a text update with a picture of your furry family member.
+We are licensed, bonded, and insured and are certified in pet CPR and first aid.</p>
+		</div>
+		
+	</div>-->
