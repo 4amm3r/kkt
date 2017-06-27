@@ -1,0 +1,454 @@
+/* =========================== */
+/* ==                       == */
+/* ==        KEYNERS        == */
+/* ==                       == */
+/* ==  http://keyners.com/  == */
+/* =========================== */
+
+#overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#modal {
+    position:absolute;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+}
+
+#modalcontent {
+    border-radius:8px;
+    background:#fff;
+    padding:20px;
+}
+#close {
+    position:absolute;
+    background:url(../images/misc/close.png) 0 0 no-repeat;
+    width:24px;
+    height:27px;
+    display:block;
+    text-indent:-9999px;
+    top:-7px;
+    right:-7px;
+}
+
+.centerrow{
+    vertical-align: middle !important;
+}
+
+.requiredstar {
+    color: red;
+}
+
+body {margin:0; padding: 0; font-family: "Comic Sans MS"}
+body {background: #fff; color: #585858;}
+
+.expand{
+    height: 24px;
+    cursor: pointer;
+}
+/*
+* Paragraf
+*/
+p {font-size: 80%; font-weight: 300; color: #333; line-height: 22px;}
+
+
+
+/*
+* Link
+*/
+a, a:visited {text-decoration: none; color: #585858;}
+.pinklink a, .pinklink a:visited {text-decoration: none; color: #f09ad5;}
+
+
+
+/*
+* Headings
+*/
+h1 {font-size: 1.8em; line-height: 1.23em;}
+h2 {font-size: 22px;}
+h3 {font-size: 24px; font-weight: 400; padding: 20px 0;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px; padding-bottom: 10px;}
+h6 {font-size: 14px; padding-bottom: 10px; font-weight: bold;}
+
+h5 b {font-weight: bold;}
+
+
+/*
+* Lista NIE uporzadkowana UL
+*/
+ul {font-size: 14px; margin: 7px 0; padding-left: 10px;}
+ul li {margin-bottom: 5px;}
+
+
+/*
+* divs random
+*/
+.container .clear, body .clear {width: 100%; float: left; clear: both; margin: 20px 0;}
+.one-third {text-align: center;}
+
+.clear.ifmobile{display: none;}
+
+
+
+
+/*
+* Header 
+*/
+
+header nav {width: 100%; float: left; margin: 0; padding: 25px 0 0px; background: #fff; border-top: 2px solid #f09ad5;}
+header .slogan {float:left;padding: 0;margin-top: 100px;}
+header .slogan .intro {float:left;}
+header .slogan .intro p {font-size: 16px;}
+header .slogan .intro h2 {font-size: 28px;}
+header .slogan a.green {margin: 13px 0; padding: 10px 28px;}
+header p {color: #fff;}
+header h1, header h2, header h4 {width: 100%; float: left; clear: both;  text-align: left; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,.2); font-weight: 600;}
+header h1 {font-size: 3em; margin-bottom: 10px;}
+header h2 {font-size: 2em;}
+header h4 {font-weight: normal; margin-bottom: 10px;}
+.subtext {font-style: italic; font-size: 20px; align-self: center;}
+
+
+
+/*
+* Logo
+*/
+.logo a {color: #444; text-decoration: none; line-height: 20px;}
+.logo a:hover {color: #f09ad5;}
+.logo img {height: 400px; display:block;margin-top: -25px;}
+
+/*
+* Images
+*/
+.thumbnail
+{
+    height: 95px;
+}
+
+.recommendation
+{
+    height: 115px;
+}
+
+.peticons
+{
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+/*
+* Recommendations
+*/
+.producttext
+{
+    margin-left: 20px;
+    vertical-align: text-top !important;
+}
+.productstable
+{
+    margin: auto;
+}
+
+
+/*
+* Menu
+*/
+ul.mainMenu {margin: 0; padding: 0; float: right;}
+ul.mainMenu li {display: block; float: left; margin: 2px 10px;}
+ul.mainMenu li a {font-size: 16px; color: #f09ad5; text-decoration: none;}
+ul.mainMenu li a:hover {color: #444;
+	-webkit-transition: color .12s ease-in-out;
+    -moz-transition: color .12s ease-in-out;
+    -ms-transition: color .12s ease-in-out;
+    -o-transition: color .12s ease-in-out;
+    transition: color .12s ease-in-out;
+}
+
+.about p{font-size: 16px;}
+
+.widget img {align-content: center;}
+
+.icons {display: inline-block; margin: auto;}
+.aboutme{text-align: center;}
+
+.testimonials{text-align: center;}
+.testimonials p{font-size: 16px; padding-top: 4px;}
+.testimonials h4{text-align: left;}
+.lighttext {color: ##333}
+
+.pagetitle{font-size: 35px;}
+
+.aboutphoto{height: 500px;}
+.introimg{height: 500px; margin-top: 100px;}
+.intro{text-align: center;}
+.snowflake{height: 300px;}
+.popoki{height: 200px;}
+.footerimg{width: 800px;}
+
+.vertcard{width:260px; margin: 5px;}
+.horizcard{width:325px;  margin: 5px;}
+
+#bigimages {width: 400px;}
+#bigimages img {width: 400px;}
+
+#cardimages {width: 400px;}
+#cardimages img {width: 400px;}
+/*#bigimages img {width: 75%}*/
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.logobutton{height: 100px; margin-top: -20px;}
+/*
+* Orange
+*/
+.orange {width: 100%; float: left; clear: both; background: #f09ad5; margin: 50px 0; padding: 45px 0; color: #fff; text-align: center; position: relative;z-index: 1;}
+.orange h2 {width: 100%; margin: 20px 0 50px; text-align: center; text-shadow: none;}
+.orange p {width: 600px; margin: 0 auto 30px; color: #fff; text-align: center;}
+.orange a.dalej {display: block; width: 185px; background: #f09ad5; color: #fff; margin: 0 auto 20px; padding: 10px 20px; font-size: 12px; text-transform: uppercase;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+.orange a.dalej:hover {background: #fff; color: #ff6a00;}
+
+/*
+* pink
+*/
+.pink {width: 100%; float: left; clear: both; background: #f09ad5; margin: 20px 0; padding: 20px 0; color: #fff; text-align: center; position: relative;z-index: 1; vertical-align: text-top !important;}
+.pink h4 {color: #fff;text-align: center;font-size: 24px;text-decoration: underline;}
+.pink p {color: #fff;text-align: center;font-size: 15px;}
+
+
+.pinktitle {color: #f09ad5; font-weight: bold; text-align: center; }
+.pinksubtext {color: #f09ad5; text-align: center; font-size: 14px; cursor: pointer;}
+.pinktitleborder {color: #f09ad5; font-weight: bold; text-align: center; border-top: 2px solid #f09ad5; margin-top: 10px; padding: 13px 0;}
+.pinktitlenoborder {color: #f09ad5; font-weight: bold; text-align: center; margin-top: 10px; padding: 13px 0;}
+.pinkboxborder {color: #f09ad5; font-weight: bold; text-align: center; border: 2px solid #f09ad5; margin-top: 15px; padding: 13px 0;}
+.pinkboxborder p {color: ##333;text-align: center;font-size: 16px;}
+.whitecontent {width: 100%; float: left; clear: both; color: ##333; font-size: 16px; text-align: center; position: relative;z-index: 1; vertical-align: text-top !important;}
+.whitecontent br {line-height: 28px;}
+
+/*
+* Gray
+*/
+.gray {width: 100%; float: left; clear: both; background: #f6f6f6; margin: 50px 0; padding: 45px 0; position:relative; z-index:1;}
+
+
+
+
+/*
+* Form, input, label, textarea
+*/
+.form h3, .form p {text-align: center;}
+form {width: 500px; text-align: center;}
+form label {color: #f09ad5; font-weight: bold;}
+input, label, textarea {width: 440px; float: left; margin: 0; padding: 0;}
+select {width: 440px; margin: 0; padding: 0;}
+.halfinput {width: 210px; margin-right: 18px;}
+.halfinputselect {width: 210px; margin-right: 18px;}
+button.btn {margin-top: 5px;}
+label {font-size: 15px; font-weight: 300; margin-bottom: 7px; font-weight:bold}
+input, select {margin-bottom: 20px; padding: 7px 0; text-align: center;}
+input, select, textarea {border: 2px solid #aaaaaa; outline: none;}
+input:focus, select:focus, textarea:focus {border-color: #a6a6a6;}
+textarea {width: 420px; padding: 7px 10px;}
+.phonenumber {color: #f09ad5;text-decoration:none;}
+input.error, select.error, textarea.error {border-color: #cc4847;}
+
+td.pettable {vertical-align: top;}
+
+
+
+input[type='submit'] {width: 200px; margin-top: 10px; font-size: 18px; border: none; background: #eee; color: #aaa; font-family: "Comic Sans MS";  float: none;}
+input.submit {background: #f09ad5; color: #fff; cursor: pointer;}
+
+input.submit:hover {background: #e08ae5;  }
+input.submit:active { box-shadow: inset 1px 6px 12px #f09ad5, 1px 2px 1px #333;}
+
+
+/*
+* Focus
+*/
+.focus h3 {margin-bottom: 15px;}
+.focus h4, .focus h3 {float: left; width: 100%; text-align: center; margin-bottom: 7px;}
+.focus p {text-align: center;}
+
+
+
+/*
+* Gallery
+*/
+.gallery a {width: 140px; height: 100px; overflow: hidden; float: left; margin: 5px; }
+.gallery a img {height: 95px;}
+
+
+
+
+/*
+* a#Top
+*/
+a#top {display: none; width: 7px; height: 17px; padding: 5px; position: fixed; bottom: 50px; right: 60px; z-index: 9; color: #fff; background: #f09ad5; font-size: 14px; font-weight: 300;}
+
+
+
+
+
+
+/*
+* BUTTONS
+*/
+.button {float: left; color: #fff; text-transform: uppercase; text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+
+	-webkit-transition: background .12s ease-in-out;
+    -moz-transition: background .12s ease-in-out;
+    -ms-transition: background .12s ease-in-out;
+    -o-transition: background .12s ease-in-out;
+    transition: background .12s ease-in-out;
+}
+
+
+.medium {font-size: 12px; margin: 5px 0; padding: 9px 14px 8px;}
+
+
+
+a.green {background: #45C491; color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 0 0 rgba(255,255,255,.2) inset;
+}
+a.green:hover {background: #36ae7e}
+
+
+
+/*
+* Footer
+*/
+footer {width: 100%; float: left; margin: 20px 0 0; padding: 30px 0; background: #333;}
+footer h5 {color: #ccc;}
+footer h5 a {color: #f09ad5  !important;}
+footer p {color: #ddd; line-height: 15px; font-size: 14px; margin-bottom: 7px;}
+footer a {color: #ddd;}
+footer a:hover {color: ##cc3399;}
+
+
+footer .social a {float: left; margin-right: 10px;}
+footer .social a img {width: 35px; opacity: 0.4;}
+footer .social a:hover img {opacity: 1;}
+footer .social h5 {text-align: left;}
+
+
+
+
+
+
+
+/* -------------------
+*  RESPOSIVE ELEMENTS
+*  ------------------- */
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+	header h2 {display: none;}
+	header .slogan {padding-top: 40px;}
+
+	nav .container .logo {margin-bottom: 0px; text-align: center;}
+
+	.orange p {width: 400px;}
+
+	form, label, input, select   {width: 400px;}
+	input[type="submit"] {width: 402px;}
+	textarea {width: 380px;}
+    .halfinput {width: 195px; margin-right: 8px;}
+.halfinputselect {width: 195px; margin-right: 18px;}
+    .aboutphoto{width: 380px; height: auto;}
+    .introimg{width: 380px; height: auto; margin-top: 120px;}
+    .logobutton{height: 50px; margin-top: -20px;}
+    .footerimg{width: 400px;}
+    
+    header .slogan .intro {display: none;}
+    .logo img {height: 240px; }
+    
+    #bigimages {width: 300px;}
+    #bigimages img {width: 300px;}
+    
+    #cardimages {width: 300px;}
+    #cardimages img {width: 300px;}
+    
+    .vertcard{width:160px; margin: 5px;}
+    .horizcard{width:125px;  margin: 5px;}
+    .four.columns.thumbtack{margin-left: 15px;}
+    .clear.ifmobile{display: block;}
+
+	.container .one-third.column, .container .eight.columns, .container .four.columns {margin-bottom: 40px;}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	
+	header h2, header .six.columns {display: none;}
+	header .slogan {padding: 30px 0;}
+
+    
+	nav .container .logo {margin-bottom: 0px; text-align: center;}
+
+	.orange p {width: 200px;}
+
+
+    header .slogan .intro {display: none;}
+    .logo img {height: 230px; }
+
+	form, label, input, select  {width: 300px;}
+	input[type="submit"] {width: 302px;}
+	textarea {width: 280px;}
+    .halfinput {width: 145px; margin-right: 8px;}
+.halfinputselect {width: 145px; margin-right: 18px;}
+    .aboutphoto{width: 280px; height: auto;}
+    .introimg{width: 280px; height: auto; margin-top: 120px;}
+    .logobutton{height: 40px; margin-top: -20px;}
+    #bigimages {width: 300px;}
+    #bigimages img {width: 300px;}
+    .footerimg{width: 300px;}
+    
+    #cardimages {width: 300px;}
+    #cardimages img {width: 300px;}
+    
+    .vertcard{width:90px; margin: 5px;}
+    .horizcard{width:80px;  margin: 5px;}
+    .four.columns.thumbtack{margin-left: 15px;}
+    .clear.ifmobile{display: block;}
+
+	.container .one-third.column, .container .eight.columns, .container .four.columns {margin-bottom: 40px;}
+
+
+}
+
+
+
+
+
+
+
+
+
