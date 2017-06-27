@@ -48,73 +48,6 @@
     <script type="text/javascript" src="js/spin.min.js"></script>
 	<script type="text/javascript">
         
-//        var modal = (function(){
-//            var 
-//            method = {},
-//            $overlay,
-//            $modal,
-//            $content,
-//            $close;
-//
-//            // Append the HTML
-//            $overlay = $('<div id="overlay"></div>');
-//            $modal = $('<div id="modal"></div>');
-//            $content = $('<div id="modalcontent"></div>');
-//            $close = $('<a id="close" href="#">close</a>');
-//
-//            $modal.hide();
-//            $overlay.hide();
-//            $modal.append($content, $close);
-//
-//            $(document).ready(function() {            
-//                    $('body').append($overlay, $modal);
-//            });
-//
-//            // Center the modal in the viewport
-//            method.center = function () {
-//                var top, left;
-//
-//                top = Math.max($(window).height() - $modal.outerHeight(), 0) / 2;
-//                left = Math.max($(window).width() - $modal.outerWidth(), 0) / 2;
-//
-//                $modal.css({
-//                    top:top + $(window).scrollTop(), 
-//                    left:left + $(window).scrollLeft()
-//                });
-//            };
-//
-//            // Open the modal
-//            method.open = function (settings) {
-//                $content.empty().append(settings.content);
-//
-//                $modal.css({
-//                    width: settings.width || 'auto', 
-//                    height: settings.height || 'auto'
-//                })
-//
-//                method.center();
-//
-//                $(window).bind('resize.modal', method.center);
-//
-//                $modal.show();
-//                $overlay.show();
-//            };
-//
-//            // Close the modal
-//            method.close = function () {
-//                $modal.hide();
-//                $overlay.hide();
-//                $content.empty();
-//                $(window).unbind('resize.modal');
-//            };
-//            $close.click(function(e){
-//                e.preventDefault();
-//                method.close();
-//            });
-//
-//            return method;
-//        }());
-//        }());
 		$(document).ready(function() {  
                 var testimonialView = false;
                 $('#testimonialdiv').hide();
@@ -212,9 +145,6 @@
             
 		});
 	</script>
-
-	
-
 </head>
     
 <body>
@@ -274,10 +204,7 @@
             <br>
             I currently have three cats named Salie, Popoki, and Dixie Rose.</p>
             <br><br>      
-<!--
-			<img class='aboutphoto' src="images/photos/snowflake.jpg"/>
-            <p>Snowflake</p>
--->
+
             <div id="gallery">
                 <table class="photogallery">
                     <tr>
@@ -345,75 +272,8 @@
                 <p class="whitecontent"><span class="pinktitle">&#10084;</span> $20 for a supply run, plus cost of supplies<br>
                     <span class="pinktitle">&#10084;</span> $45 per hour for an emergency vet trip</p>
             </div>     
-          <!--    <div class='clear'></div>
-	    <div class='sixteen columns'>
-                <h4>Play Sessions</h4><br>
-                <p>&#10084;  $25 - $30 per session (depending on length desired) <br>
-                Is your cat alone all day while you're at work? We offer day visits to give your cat love and attention! We can bring interactive toys, healthy raw freeze-dried treats, catnip, and cat music.<br><br>
-                &#9835;  <a href="http://www.musicforcats.com/#new-album-section">Click here to listen to a sample of Music For Cats!</a>  &#9835;
-                </p>
-        </div>
-          <div class='clear'></div>
-            <div class='sixteen columns'>
-                <h4>Other Animal Visits</h4><br>
-                <p>&#10084;  $15 - $21 per visit (depending on length of visit)<br>
-                Fish, small animals, farm animals, etc.                 
-                </p>
-            </div>
-
-            <div class='clear'></div>
-            <div class='sixteen columns'>
-                <h4>Overnight Pet Sitting</h4><br>
-                <p>&#10084; $50 per night for all pets (does not include midday visit)<br>
-                &#10084; $65 per day for all pets (includes midday visit)<br>
-                </p>
-            </div>
--->
             <div id='services'>
                 </div>
-<!--
-	     <div class='sixteen columns'>
-                <h4>Custom Greeting Card of Your Pet</h4><br>
-                <p>&#10084; $5 per card<br>
-                On request, a customized greeting card can be made with a glittered photo of your pet.
-                 </p><br>
-            <div id="gallery">
-                <table class="photogallery">
-                    <tr>
-                        <td>
-                            <div id="thumbs" class="photogallery">
-                                <a href="javascript: changeCardImage(1, 0);"><img src="images/photos/cards/popokiside-thumb.jpg" alt="Popoki card" /></a>
-                                <a href="javascript: changeCardImage(2, 0);"><img src="images/photos/cards/snowflake-thumb.jpg" alt="Snowflake card" /></a>
-                                <a href="javascript: changeCardImage(3, 0);"><img src="images/photos/cards/popokinap-thumb.jpg" alt="Popoki card" /></a>
-                            </div>                            
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="photogallery">
-                            <div id="cardimages">
-                                <div class="galimgdiv" id="card1">
-                                    <img class="galleryimg" src="images/photos/cards/popokiside.jpg" alt="Popoki card"/>
-                                </div>
-
-                                <div class="galimgdiv" id="card2">
-                                    <img class="galleryimg" src="images/photos/cards/snowflake.jpg" alt="Snowflake card"/>
-                                </div>
-
-                                <div class="galimgdiv" id="card3">
-                                    <img class="galleryimg" src="images/photos/cards/popokinap.jpg" alt="Popoki card"/>
-                                </div>
-                             </div>
-                        </td>
-                    </tr>
-                </table>
-                <div id='services'>
-                </div>
-            </div>
-        </div> 
-	    <div class='clear'></div>
--->
-            
             <div  id='testimonials'  class='sixteen columns'>
                 <div class="pinkboxborder">
                     <h4>** Policies **</h4><br>
@@ -528,35 +388,9 @@
                                     <label class='halfinput'>Description</label>
                                     <input class='halfinput' name='petinfo' id='info' type="text">
                                 </td>
-<!--
-                                    <select class='halfsmallinput' name='pettype' id='animal'>
-                                        <option value='cat' >Cat</option>
-                                        <option value='fish' >Fish</option>
-                                        <option value='small' >Small animal</option>
-                                        <option value='farm' >Farm animal</option>
-                                        <option value='dog' >Dog</option>
-                                        <option value='mixed' >Mixed</option>
-                                        <option value='other' >Other</option>
-                                    </select>
--->
-                                
                                 <td><img class="peticons" id="addpet" src="images/misc/add.png"/></td>
                             </tr>
-                       </table>                                 
-            <!--
-                                        <td>
-                                            <label class='halfinput'>Pet Type</label>
-                                            <select class='halfinput' name='pettype' id='animal'>
-                                                <option value='cat' >Cat</option>
-                                                <option value='fish' >Fish</option>
-                                                <option value='small' >Small animal</option>
-                                                <option value='farm' >Farm animal</option>
-                                                <option value='dog' >Dog</option>
-                                                <option value='mixed' >Mixed</option>
-                                                <option value='other' >Other</option>
-                                            </select>
-                                        </td>
-            -->
+                       </table>
                                     <table>
                                     <tr>
                                         <td>
@@ -941,36 +775,3 @@
     }(document, 'script', 'facebook-jssdk'));</script>	
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 </html>
-
-
-<!--	<div class='container'>
-
-		<div class='one-third column'>
-            <img class='thumbnail' src='images/photos/nadiaanddixie.jpg'>
-			<h3>About the Owner</h3>
-			<p>My name is Nadia and I am soooo amazing!</p>
-		</div>
-
-
-		<div class='one-third column'>
-			<div class='one-third column gallery'>
-				<a rel="cat_group" href='images/photos/dixie.jpg'><img src='images/photos/dixie.jpg'></a>
-				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
-				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
-				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
-				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
-				<a rel="cat_group" href='images/photos/snowflake.jpg'><img src='images/photos/snowflake.jpg'></a>
-			</div>
-			<h3>My Cats</h3>
-			<p>Pokie and Dixie</p>
-		</div>
-
-
-		<div class='one-third column'>
-			<img class='thumbnail' src='images/misc/KittyKatTimeTransparent.png'>
-			<h3>Our </h3>
-			<p>Kitty Kat Time specializes in cat care, making sure your cat is happy, safe, and comfortable while you're away. We offer ample playtime, attention, and lots of love! At the end of each visit, we send you a text update with a picture of your furry family member.
-We are licensed, bonded, and insured and are certified in pet CPR and first aid.</p>
-		</div>
-		
-	</div>-->
