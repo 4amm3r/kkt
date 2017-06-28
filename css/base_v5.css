@@ -98,14 +98,12 @@ ul li {margin-bottom: 5px;}
 
 .clear.ifmobile{display: none;}
 
-
-
-
 /*
 * Header 
 */
 
-header nav {width: 100%; float: left; margin: 0; padding: 25px 0 0px; background: #fff; border-top: 2px solid #f09ad5;}
+header nav {width: 100%; float: left; margin: 0; padding: 25px 0 0px; background: #fff; border-top: 2px solid #f09ad5; position: relative; z-index: 50000;
+}
 header .slogan {float:left;padding: 0;margin-top: 100px;}
 header .slogan .intro {float:left;}
 header .slogan .intro p {font-size: 16px;}

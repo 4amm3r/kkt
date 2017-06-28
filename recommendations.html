@@ -1,3 +1,37 @@
+<script type="text/javascript">
+        
+		$(document).ready(function() {  
+            var recommendView = false;
+                $('#recommendationdiv').hide();
+                $('#recommendexpand').on('click', function(){
+                    if(recommendView == false){                   
+                        $('#recommendexpandtext').text('Click to show less');     
+                        $('#recommendationdiv').slideDown(1000);
+                        $('#recommendexpand').attr('src', 'images/misc/up.png');
+                    }
+                    else{                                       
+                        $('#recommendexpandtext').text('Click to show more');
+                        $('#recommendationdiv').slideUp(1000);
+                        $('#recommendexpand').attr('src', 'images/misc/down.png');
+                    }
+                    recommendView = !recommendView;
+                });
+                $('#recommendexpandtext').on('click', function(){
+                    if(recommendView == false){                
+                        $('#recommendexpandtext').text('Click to show less');        
+                        $('#recommendationdiv').slideDown(1000);
+                        $('#recommendexpand').attr('src', 'images/misc/up.png')
+                    }
+                    else{                                       
+                        $('#recommendexpandtext').text('Click to show more');
+                        $('#recommendationdiv').slideUp(1000);
+                        $('#recommendexpand').attr('src', 'images/misc/down.png')
+                    }
+                    recommendView = !recommendView;
+                });
+        });
+</script>
+
 <div class="recommendations">
     <div class='container'>
         <h3 class='pink pagetitle'>Recommendations</h3><br>

@@ -1,0 +1,68 @@
+<script type="text/javascript">
+        
+		$(document).ready(function() {  
+            var testimonialView = false;
+                $('#testimonialdiv').hide();
+                $('#testexpand').on('click', function(){
+                    if(testimonialView == false){     
+                        $('#testexpandtext').text('Click to show less');             
+                        $('#testimonialdiv').slideDown(1000);
+                        $('#testexpand').attr('src', 'images/misc/up.png');
+                    }
+                    else{                              
+                        $('#testexpandtext').text('Click to show more')         
+                        $('#testimonialdiv').slideUp(1000);
+                        $('#testexpand').attr('src', 'images/misc/down.png')
+                    }
+                    testimonialView = !testimonialView;
+                });
+                $('#testexpandtext').on('click', function(){
+                        if(testimonialView == false){
+                            $('#testexpandtext').text('Click to show less');
+                            $('#testimonialdiv').slideDown(1000);
+                            $('#testexpand').attr('src', 'images/misc/up.png');
+                        }
+                        else{                                       
+                            $('#testexpandtext').text('Click to show more');
+                            $('#testimonialdiv').slideUp(1000);
+                            $('#testexpand').attr('src', 'images/misc/down.png');
+                        }
+                        testimonialView = !testimonialView;
+                    });
+        });
+</script>
+<div class="testimonials">
+        <div class='container'>
+            <h3 class='pink pagetitle'>Testimonials</h3><br>
+                <div class='sixteen columns'>
+                    <h4 class="pinktitlenoborder">Janine - mom of Whiskey, Tango, and Foxtrot</h4>
+                    <p>"Nadia provided excellent care for our 3 Maine Coons while we were out of town for a week. They were a little shy the first day and after that they seemed to look forward to her daily visit where she brushed and played with them in addition to taking care of the basics with food, water, treats and litter. We received daily updates with pictures and all 3 boys seemed to enjoy their time with her. I would highly recommend Nadia to care for your cats!"
+                    </p><br>
+            <div id='testimonialdiv'>
+                    <h4 class="pinktitlenoborder">Alex - Flossie's mom</h4>
+                    <p>"I could not recommend Nadia and Kitty Kat Time highly enough. Nadia was great with our very shy cat whilst we were away. She sent us an update with every visit and made us very at ease as we knew our cat was in the best of hands. Nadia was able to work her magic and coax her out of shell. We also loved the idea our cat was listening to soothing music! Thank you Nadia, we will certainly be using Kitty Kat Time again!" 
+                    </p><br>
+                    <h4 class="pinktitlenoborder">Cathy - mom of Franny and Mimo</h4>
+                    <p>"Nadia did a fabulous job caring for our two kitties. She was extremely responsible and reliable from my first contact with her through the four days of kitty sitting. She is very organized and communicates well updating us after each visit with text and pics. It was quite clear from her text that she took time with each kitty and described their personalities perfectly. We arrived home to two very happy and calm kitties! I will most certainly use her services again and can highly recommend her to anyone who loves their kitty and wants the very best for them!!" 
+                    </p><br>
+                    <h4 class="pinktitlenoborder">Ceri - Vesuvius' mom</h4>
+                    <p>"Nadia with Kitty Kat Time did an exceptional job taking care of my cat and home while I was away. She not only made sure the cat was thoroughly provisioned, but entertained and cuddled as well. Her daily updates set my mind at ease, and made me smile at the spoiling my cat was receiving. I couldn't be more thrilled, and enthusiastically recommend Kitty Kat Time to anyone who needs a cat sitter for their time away." 
+                    </p><br>
+                    <h4 class="pinktitlenoborder">Atsuko - Fjord's mom</h4>
+                    <p>"Nadia is a perfect and professional cat sitter. Highly recommend! 
+     It seems that my cat was looking for her visiting every morning and evening. She gave plenty of attention to him. It didn't take long for my cat to get along with Nadia. And she always send me his pics (not only 1 photo) and comments to me which made me so relieved while I was away from home."
+                    </p><br>
+                    <h4 class="pinktitlenoborder">Chris - mom of Bob and Gretta</h4>
+                    <p>"Nadia is reliable, dependable, and efficient. She is pleasant and easy to deal with. She's great with my (sort of neurotic) cats! It's such a relief when we have to be out of town to be able to relax about our cas and house. I can't tell you what a difference it makes to us. If there was a sixth star, she'd get it!"
+                    </p><br>
+                   <h4 class="pinktitlenoborder">Ellen - Annie's mom</h4>
+                    <p>"Nadia sent updates after each visit and kept a log of her care for my cat. I came home to a happier cat than any other time I've gone out of town. Everything was taken care of and went smoothly, thanks to Nadia. She is easy to get into contact with and communicates well."
+                    </p>
+                
+                    </div>
+                    
+                    <img id='testexpand' class="expand" src="images/misc/down.png" /><br>
+                    <span id='testexpandtext' class="pinksubtext">Click to see more</span>
+                </div>
+            </div>
+    </div>

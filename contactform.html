@@ -1,0 +1,203 @@
+<script type="text/javascript">
+		var form = $('form');
+		$(document).ready(function() {  
+            $('#addpet').on('click', function(){
+                window.addpet();
+            });
+            $('#startdate').datepicker();
+            $('#enddate').datepicker();
+            form.validate({
+		    	ignore: "",
+	            rules: {
+	            	'firstname': {
+	                    required: true,	                 
+	                },
+	            	'lastname': {
+	                    required: true,	                 
+	                },
+	                'mail': {
+	                    required: true,
+	                    email: true
+	                },
+	                'phone': {
+	                    required: true
+	                }				                
+	            },
+	            errorPlacement: function(error, element){},
+                submitHandler: function(form) {
+                    $("#requestbutton").val("Sent!");
+                    $("#requestbutton").attr("disabled", "true");
+                    $("#requestbutton").removeClass('submit');
+                    var fistnametext = form.firstname.value;
+                    var lastnametext = form.lastname.value;
+                    var email = form.mail.value;
+                    var phonetext = form.phone.value;
+                    var street = form.street.value;
+                    var city = form.city.value;
+                    var zip = form.zip.value;
+                    var startdate = form.startdate.value;
+                    var enddate = form.enddate.value;
+
+                    var servicetype = form.servicetype.value;
+                    var discoveredtype = form.discoveredtype.value;
+                    var message = form.message.value;
+
+
+                    var petNum = petnumber;
+                    var pets = [];
+
+                    for(var i = 0; i < petNum; ++i){
+                        var pname = form[9+(i*2)].value;
+                        var ptype = form[10+(i*2)].value;
+                        pets.push({name:pname,type:ptype});
+                    }
+                    var petsText = JSON.stringify(pets);
+                    $.ajax({
+                        url: 'http://45.79.86.152:3000/emailnew',
+                        type: 'POST',
+                        dataType : "text",
+                        data: {
+                            firstname: fistnametext,
+                            lastname: lastnametext,
+                            email: email,
+                            phone: phonetext,
+                            street: street,
+                            city: city,
+                            zip: zip,
+                            startdate: startdate,
+                            enddate: enddate,
+                            petnumber: petnumber,
+                            pets: petsText,
+                            servicetype: servicetype,
+                            discoveredtype: discoveredtype,
+                            message: message
+                        },
+                        success: function(data, textStatus, jqXHR) {
+                            var result = JSON.parse(data);
+                            if(result.result == "Success"){
+                            }
+                            else{
+                                alert("An error occurred. Please email nadia@kittykattime.com.");
+                                $("#requestbutton").val("Request");
+                                $("#requestbutton").attr("disabled", "false");
+                                $("#requestbutton").addClass('submit');
+                            }
+                        },
+                        error: function(response, textStatus, jqXHR) {
+                            alert("An error occurred. Please email nadia@kittykattime.com.");
+                            $("#requestbutton").val("Request");
+                            $("#requestbutton").attr("disabled", "true");
+                            $("#requestbutton").addClass('submit');
+                        }
+                    });
+                }
+		    });
+        });
+</script>
+<div id='contact'>
+        <div class='container'>
+            <div class='sixteen columns form'>
+            <h3 class='pink pagetitle' id='contact'>Contact Us</h3>
+                <form id="contact" name="contact" method="post">
+                    <div class='container'>
+                         <div class='eight columns'>
+                                <label>Name <span class="requiredstar">*</span></label>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input class='halfinput' id='firstname' type='text' name='firstname' placeholder='First name'>
+                                        </td>
+                                        <td> 
+                                            <input class='halfinput' id='lastname' type='text' name='lastname' placeholder='Last name'>
+                                        </td>
+                                    </tr>
+                                </table>  
+                                <label>Email Address <span class="requiredstar">*</span></label>
+                                <input type='text' name='mail' placeholder='Your email address'>
+                                <label>Phone Number <span class="requiredstar">*</span></label>
+                                <input type='text' name='phone' placeholder='Your phone number'>
+                                <label>Address</label>
+                                <input type='text' name='street' placeholder='Street address'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input class='halfinput' id='city' type='text' name='city' placeholder='City'>
+                                        </td>
+                                        <td> 
+                                            <input class='halfinput' id='zip' type='text' name='zip' placeholder='Zip code'>
+                                        </td>
+                                    </tr>
+                                </table>    
+                                <label>When do you need services?</label>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input class='halfinput' id='startdate' type='text' name='startdate' placeholder='Start date'>
+                                        </td>
+                                        <td> 
+                                            <input class='halfinput' id='enddate' type='text' name='enddate' placeholder='End date'>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>                        
+                         <div class='eight columns'>
+                        <table id='pettable'>    
+                            <tr>
+                                <td class="pettablecell">
+    <!--
+                                    <label class='halfinput'>Number of Pets</label>
+                                    <select class='halfinput' name='numberpets' id='number'>
+                                        <option value='1' >1</option>
+                                        <option value='2' >2</option>
+                                        <option value='3' >3</option>
+                                        <option value='4' >4</option>
+                                        <option value='5+' >5 or more</option>
+                                    </select>
+    -->
+                                    <label class='halfinput'>Pet Name</label>
+                                    <input class='halfinput' name='petname' id='name' type="text">
+                               </td>        
+                                <td class="pettablecell">
+                                    <label class='halfinput'>Description</label>
+                                    <input class='halfinput' name='petinfo' id='info' type="text">
+                                </td>
+                                <td><img class="peticons" id="addpet" src="images/misc/add.png"/></td>
+                            </tr>
+                       </table>
+                                    <table>
+                                    <tr>
+                                        <td>
+                                            <label class='halfinput'>Desired Services</label>
+                                            <select class='halfinputselect' name='servicetype' id='services'>
+                                                <option value='onethirty' >One 30 minute visit a day</option>
+                                                <option value='twothirty' >Two 30 minute visits a day</option>
+                                                <option value='onefortyfive' >One 45 minute visit a day</option>
+                                                <option value='onesixty' >One 60 minute visit a day</option>
+                                                <option value='midday' >Weekly midday care</option>
+                                                <option value='other' >Other</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <label class='halfinput'>How did you hear about us?</label>
+                                            <select class='halfinputselect' name='discoveredtype' id='discovered'>
+                                                <option value='website' >Website/Web Search</option>
+                                                <option value='yelp' >Yelp</option>
+                                                <option value='angieslist' >Angie's List</option>
+                                                <option value='thumbtack' >Thumbtack</option>
+                                                <option value='media' >Social Media</option>
+                                                <option value='referral' >Referral</option>
+                                                <option value='ad' >Advertisement</option>
+                                                <option value='other' >Other</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                        <label>Message</label>
+                                <textarea cols='40' rows='14' name='message'></textarea>
+                           <input id='requestbutton' class='submit' type='submit' value='Request'>
+                        </div>
+                        </div>
+                </form>
+              </div>
+          </div>
+    </div>

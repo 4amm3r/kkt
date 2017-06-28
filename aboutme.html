@@ -1,0 +1,87 @@
+<script type="text/javascript">
+        
+		$(document).ready(function() {  
+            // create a simple instance
+                // by default, it only adds horizontal recognizers
+                $('.galleryimg').on('dragstart', function(event) { event.preventDefault(); });
+            
+                var myElement = document.getElementById('bigimages');
+            
+                var mc = new Hammer(myElement);
+
+                // listen to events...
+                mc.on("swiperight swipeleft", function(ev) {
+                    if(ev.type == "swiperight") {
+                        changeImage(currentImage - 1, 1);
+                    }
+                    else if(ev.type == "swipeleft") {
+                        changeImage(currentImage + 1, -1);
+                    }
+                });
+            
+                var cardElement = document.getElementById('cardimages');
+            
+                var card = new Hammer(cardElement);
+
+                // listen to events...
+                card.on("swiperight swipeleft", function(ev) {
+                    if(ev.type == "swiperight") {
+                        changeCardImage(currentCardImage - 1, 1);
+                    }
+                    else if(ev.type == "swipeleft") {
+                        changeCardImage(currentCardImage + 1, -1);
+                    }
+                });
+        });
+</script>
+
+<div class='aboutme' id='about'>
+		<div class='container focus about'>
+            <img class='aboutphoto' src="images/photos/nadiaanddixie.jpg" alt="Nadia and Dixie" />
+            <br> <br>
+            <h1 class="pinktitlenoborder"> Nadia - The Owner </h1>
+            <br>
+            <p>My name is Nadia, and I am the owner of Kitty Kat Time. Ever since I was little, animals have been my passion! I grew up with frogs, fish, and guinea pigs. I got my first cat when I was 6 and named her Snowflake. She was a gorgeous part Siamese/tabby cat. She experienced a lot in her 16 years on earth and even moved 3,000 miles across the country with me. Snowflake started my love for cats, and in high school I began volunteering at cat shelters. I was a cat care specialist volunteer for the Northwest Organization for Animal Help (NOAH) and volunteered with the Everett Animal Shelter as a cat room assistant.
+            I got my Bachelor of Science degree in Animal Behavior and then became an independent contractor with two pet service companies, providing cat/small animal visits, overnight pet care, dog walking, and puppy training. I have experience with farm animals from working on a horse farm, interning at Farm Sanctuary’s Animal Acres, and volunteering at Pasado’s Safe Haven. I also volunteered at Sarvey Wildlife Care, helping to rehabilitate wild animals.
+            <br>
+            I currently have three cats named Salie, Popoki, and Dixie Rose.</p>
+            <br><br>      
+
+            <div id="gallery">
+                <table class="photogallery">
+                    <tr>
+                        <td>
+                            <div id="thumbs" class="photogallery">
+                                <a href="javascript: changeImage(1, 0);"><img src="images/photos/snowflake-thumb.jpg" alt="Snowflake" /></a>
+                                <a href="javascript: changeImage(2, 0);"><img src="images/photos/dixiecouch-thumb.jpg" alt="Dixie" /></a>
+                                <a href="javascript: changeImage(3, 0);"><img src="images/photos/popoki-thumb.jpg" alt="Popoki" /></a>
+                            </div>                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="photogallery">
+                            <div id="bigimages">
+                                <div class="galimgdiv" id="normal1">
+                                    <img class="galleryimg" src="images/photos/snowflake.jpg" alt="Snowflake"/>
+                                    <p>Snowflake</p>
+                                </div>
+
+                                <div class="galimgdiv" id="normal2">
+                                    <img class="galleryimg" src="images/photos/dixiecouch.jpg" alt="Dixie"/>
+                                    <p>Dixie</p>
+                                </div>
+
+                                <div class="galimgdiv" id="normal3">
+                                    <img class="galleryimg" src="images/photos/popoki.jpg" alt="Popoki"/>
+                                    <p>Popoki</p>
+                                </div>
+                             </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id='services'>
+                </div>
+            </div>
+	 </div>
+	</div>
