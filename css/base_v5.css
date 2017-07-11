@@ -203,7 +203,7 @@ ul.mainMenu li a:hover {color: #444;
 .pagetitle{font-size: 35px;}
 
 .aboutphoto{height: 500px;}
-.introimg{height: 500px; margin-top: 100px;}
+.introimg{height: 600px;}
 .intro{text-align: center;}
 .snowflake{height: 300px;}
 .popoki{height: 200px;}
@@ -393,7 +393,7 @@ footer .social h5 {text-align: left;}
     .halfinput {width: 195px; margin-right: 8px;}
 .halfinputselect {width: 195px; margin-right: 18px;}
     .aboutphoto{width: 380px; height: auto;}
-    .introimg{width: 380px; height: auto; margin-top: 120px;}
+    .introimg{width: 380px; height: auto;}
     .logobutton{height: 50px; margin-top: -20px;}
     .footerimg{width: 400px;}
     
@@ -437,7 +437,7 @@ footer .social h5 {text-align: left;}
     .halfinput {width: 145px; margin-right: 8px;}
 .halfinputselect {width: 145px; margin-right: 18px;}
     .aboutphoto{width: 280px; height: auto;}
-    .introimg{width: 280px; height: auto; margin-top: 120px;}
+    .introimg{width: 280px; height: auto;}
     .logobutton{height: 40px; margin-top: -20px;}
     #bigimages {width: 300px;}
     #bigimages img {width: 300px;}
