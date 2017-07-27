@@ -78,7 +78,7 @@ var currentCardImage = 1;
 
 var petnumber = 1;
 function addpet(){
-    var row = "<tr class='addpet"+petnumber+"'><td><label class='halfinput'>Pet Name</label><input class='halfinput' name='petname' id='name" + petnumber + "' type='text'></td><td><label class='halfinput'>Description</label><input class='halfinput' name='petinfo' id='info" + petnumber + "'><td><img class='peticons' id='addpet" + petnumber + "' src='images/misc/minus.png'/></td><td><img class='peticons' id='addpetbutton" + petnumber + "' src='images/misc/add.png'/></td></tr>"
+    var row = "<tr class='addpet"+petnumber+"'><td><label class='halfinput'>Pet Name</label><input class='halfinput' name='petname' id='name" + petnumber + "' type='text'></td><td><label class='halfinput'>Description</label><input class='halfinputdesc' name='petinfo' id='info" + petnumber + "'><td><img class='peticons' id='addpet" + petnumber + "' src='images/misc/minus.png'/></td><td><img class='peticons' id='addpetbutton" + petnumber + "' src='images/misc/add.png'/></td></tr>"
     $('#addpet' +petnumber).name = petnumber;
     $('#pettable').append(row);
     

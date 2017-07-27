@@ -179,7 +179,7 @@ header h4 {font-weight: normal; margin-bottom: 10px;}
 */
 ul.mainMenu {margin: 0; padding: 0;}
 ul.mainMenu li {display: block; float: left; margin: 2px 10px;}
-ul.mainMenu li a {font-size: 16px; color: #f09ad5; text-decoration: none;}
+ul.mainMenu li a {font-size: 20px; color: #f09ad5; text-decoration: none;}
 ul.mainMenu li a:hover {color: #444;
 	-webkit-transition: color .12s ease-in-out;
     -moz-transition: color .12s ease-in-out;
@@ -203,11 +203,13 @@ ul.mainMenu li a:hover {color: #444;
 .pagetitle{font-size: 35px;}
 
 .aboutphoto{height: 500px;}
-.introimg{height: 600px;}
+.introimg{height: 100%; width: 100%}
 .intro{text-align: center;}
 .snowflake{height: 300px;}
 .popoki{height: 200px;}
 .footerimg{width: 800px;}
+
+.servicetext{margin-right: 10px; color: #777; font-size: 18px}
 
 .vertcard{width:260px; margin: 5px;}
 .horizcard{width:325px;  margin: 5px;}
@@ -275,6 +277,7 @@ form label {color: #f09ad5; font-weight: bold;}
 input, label, textarea {width: 440px; float: left; margin: 0; padding: 0;}
 select {width: 440px; margin: 0; padding: 0;}
 .halfinput {width: 210px; margin-right: 18px;}
+.halfinputdesc {width: 210px; margin-right: 8px;}
 .halfinputselect {width: 210px; margin-right: 18px;}
 button.btn {margin-top: 5px;}
 label {font-size: 15px; font-weight: 300; margin-bottom: 7px; font-weight:bold}
@@ -391,9 +394,10 @@ footer .social h5 {text-align: left;}
 	input[type="submit"] {width: 402px;}
 	textarea {width: 380px;}
     .halfinput {width: 195px; margin-right: 8px;}
+    .halfinputdesc {width: 180px; margin-right: 4px;}
 .halfinputselect {width: 195px; margin-right: 18px;}
     .aboutphoto{width: 380px; height: auto;}
-    .introimg{width: 380px; height: auto;}
+.introimg{height: 100%; width: 100%}
     .logobutton{height: 50px; margin-top: -20px;}
     .footerimg{width: 400px;}
     
@@ -435,9 +439,10 @@ footer .social h5 {text-align: left;}
 	input[type="submit"] {width: 302px;}
 	textarea {width: 280px;}
     .halfinput {width: 145px; margin-right: 8px;}
+    .halfinputdesc {width: 130px; margin-right: 4px;}
 .halfinputselect {width: 145px; margin-right: 18px;}
     .aboutphoto{width: 280px; height: auto;}
-    .introimg{width: 280px; height: auto;}
+.introimg{height: 100%; width: 100%}
     .logobutton{height: 40px; margin-top: -20px;}
     #bigimages {width: 300px;}
     #bigimages img {width: 300px;}
