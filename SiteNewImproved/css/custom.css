@@ -1,0 +1,11 @@
+.maxwidth{
+    width: 100%;
+}
+
+.nomargin{
+    margin: 0px;
+}
+
+.headerbg{
+     background-image: url('../img/transback.png');
+}

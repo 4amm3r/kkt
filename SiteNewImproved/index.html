@@ -22,7 +22,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,14 +37,33 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top headerbg">
+        <div class="container nomargin maxwidth">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img-responsive" src="img/kktlogosmallcat.png">
+                        </td>
+                        <td>
+                            <a class="navbar-brand page-scroll" href="#page-top">Kitty Kat Time</a>
+                        </td>
+                    </tr>
+                </table>
+<!--
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/kktlogosmallcat.png">
+                </div>
+                <div class="col-lg-8">
+                    <a class="navbar-brand page-scroll close-text" href="#page-top">Kitty Kat Time</a>
+                </div>
+            </div>
+-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,19 +73,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#services">Rates</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#testimonials">Testimonials</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#recommendations">Recommendations</a>
                     </li>
                 </ul>
             </div>
@@ -77,10 +97,10 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">This is Salie</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+            <div class="intro-text"  style="position: relative;">
+                <div class="intro-lead-in">Whole-hearted Cat Sitting</div>
                 <a href="#services" class="page-scroll btn btn-xl">Book now!</a>
+                <div class="intro-cities">Serving Duvall, Woodinville, Carnation, and Redmond Ridge, WA</div>
             </div>
         </div>
     </header>
@@ -90,45 +110,151 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h1 class="section-heading">Rates</h1>
                 </div>
+            </div>
+            <div class="row text-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-paw fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h2 class="service-heading">Cat Visits</h2>
+                    <p class="text-muted"><span>&#10084;</span>  $28 per visit, $3 for each additional cat<br>
+                All visits (except cat sitting by the hour) have no time limit. We take great care in everything we do, and we take the time to pamper your kitty with the attention they desire.<br><br>
+                All visits include: <br>
+                    <span>&#10084;</span> Cat Care - feeding, litterbox scooping, playtime, cuddle time, treats (if allowed), and any medication.<br> 
+                    <span>&#10084;</span> Home Care - retrieving mail, taking out trash, watering plants, light/curtain rotation, etc.<br>
+                     <span>&#10084;</span> Email updates with pictures and a visit log on your kitchen counter for you to review when you return from your trip. <br><br>
+                      <span>&#10084;&#10084;</span> <span>&#10084;</span><br> We also offer weekly midday cat care while you are at work. Ask us for more details!<br></p>
+        
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h2 class="service-heading">Meet and Greet</h2>
+                    <p class="text-muted">Before we start any services, we schedule a 30-60 minute consultation in your home to go over your pet's routine and address any questions you may have. We will obtain two keys from you at this time and will also go over home care. Also, we will bring forms and leave them with you to fill out later. We pick these forms up with payment on our first visit.<br>
+                  <span>&#10084;</span> $20 for each meeting<br></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-key fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h2 class="service-heading">Key Service</h2>
+                    <p class="text-muted">During the meet and greet, we will obtain two keys from you to keep on file. Your keys are labeled with only your pet's name. If you are not comfortable with us safeguarding your keys, you may either drop off/pick up the keys from us, you can purchase a key lock box and provide us with the access code and location, or we can drive to your home for a fee:<br>
+                    <span >&#10084;</span> $15 per trip<br></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h2 class="service-heading">Additional Services</h2>
+                    <p class="text-muted"><span>&#10084;</span> $28 for a supply run, plus cost of supplies<br>
+                    <span>&#10084;</span> $50 per hour for an emergency vet trip</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <!-- About Section -->
+    <section id="about"  class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
+                    <h2 class="section-heading">About</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/nadiaanddixie.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">My name is Nadia</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I am the owner of Kitty Kat Time. Ever since I was little, animals have been my passion! I grew up with frogs, fish, and guinea pigs. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/snowflake.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Snowflake</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I got my first cat when I was 6 and named her Snowflake. She was a gorgeous part Siamese/tabby cat. She experienced a lot in her 16 years on earth and even moved 3,000 miles across the country with me. Snowflake started my love for cats.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/nadiavolunteering.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Volunteering</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">In high school I began volunteering at cat shelters. I was a cat care specialist volunteer for the Northwest Organization for Animal Help (NOAH) and volunteered with the Everett Animal Shelter as a cat room assistant. I also volunteered at Pasado’s Safe Haven and at Sarvey Wildlife Care, helping to rehabilitate wild animals.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image" >
+                                <img class="img-circle img-responsive" src="img/about/nadiainterning.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Work Experience</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I got my Bachelor of Science degree in Animal Behavior and then became an independent contractor with two pet service companies, providing cat/small animal visits, overnight pet care, dog walking, and puppy training. I have experience with farm animals from working on a horse farm and interning at Farm Sanctuary’s Animal Acres.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/nadiavolunteering.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Volunteering</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I currently have three cats named Salie, Popoki, and Dixie Rose.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Portfolio Grid Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Testimonials</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -216,87 +342,6 @@
                         <h4>Dreams</h4>
                         <p class="text-muted">Website Design</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
