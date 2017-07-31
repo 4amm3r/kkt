@@ -7,5 +7,82 @@
 }
 
 .headerbg{
+     background-image: url('../img/transbackphone.png');
+}
+
+.logo-text{
+    font-size: 30px;
+}
+
+.recommendation_img{
+    margin: auto;
+    height: 125px;
+}
+
+.list-footer{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.contact-text{
+    font-size: 30px;
+    color: #f09ad5;
+    font-weight: bold;
+}
+
+.serving-text{
+    font-size: 20px;
+    color: #f09ad5;    
+    font-weight: bold;
+}
+
+.serving-text::-moz-selection {
+    text-shadow: none;
+    background: #222;
+}
+
+.serving-text::selection {
+    text-shadow: none;
+    background: #222;
+}
+
+.contact-text::-moz-selection {
+    text-shadow: none;
+    background: #222;
+}
+
+.contact-text::selection {
+    text-shadow: none;
+    background: #222;
+}
+
+.pink-heart{
+    color: #f09ad5;
+}
+
+/* When not phone specific */
+@media (min-width:768px) {
+    .headerbg{
      background-image: url('../img/transback.png');
+    }
+    
+    header {
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: 0px;
+    }
+    
+    .serving-text{
+        font-size: 30px;
+        color: #f09ad5;    
+        font-weight: bold;
+    }
 }

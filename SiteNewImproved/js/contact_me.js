@@ -13,6 +13,13 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
+            var address = $("input#address").val();
+            var city = $("input#city").val();
+            var zip = $("input#zip").val();
+            var startdate = $("input#startdate").val();
+            var enddate = $("input#enddate").val();
+            var servicesrequested = $("select#servicesrequested").val();
+            var referencedfrom = $("select#referencedfrom").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -26,6 +33,13 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
+                    street: address,
+                    city: city,
+                    zip: zip,
+                    startdate: startdate,
+                    enddate: enddate,
+                    servicesrequested: servicesrequested,
+                    referencedfrom: referencedfrom,
                     message: message
                 },
                 cache: false,
