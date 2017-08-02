@@ -19,7 +19,6 @@ $(function() {
             var startdate = $("input#startdate").val();
             var enddate = $("input#enddate").val();
             var servicesrequested = $("select#servicesrequested").val();
-            var referencedfrom = $("select#referencedfrom").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -39,7 +38,6 @@ $(function() {
                     startdate: startdate,
                     enddate: enddate,
                     servicesrequested: servicesrequested,
-                    referencedfrom: referencedfrom,
                     message: message
                 },
                 cache: false,

@@ -60,6 +60,22 @@
     color: #f09ad5;
 }
 
+.about-icon{
+    width: auto;
+}
+
+.left-adjusted{
+    text-align: left;
+}
+
+.right-adjusted{
+    text-align: right;
+}
+
+.recommendation-header{
+    font-size: 34px;
+}
+
 /* When not phone specific */
 @media (min-width:768px) {
     .headerbg{
