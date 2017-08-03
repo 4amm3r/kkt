@@ -116,7 +116,7 @@ ul li {margin-bottom: 5px;}
 * Header 
 */
 
-header nav {width: 90%; float: left; margin-left: 5%; padding: 25px 0 0px; background: #fff; border-top: 2px solid #f09ad5; position: relative; z-index: 50000;
+header nav {width: 90%; float: left; margin-left: 5%; background: #fff; border-top: 2px solid #f09ad5; position: relative; z-index: 50000;
 }
 header .slogan {float:left;padding: 0;margin-top: 100px;}
 header .slogan .intro {float:left;}
@@ -188,6 +188,22 @@ ul.mainMenu li a:hover {color: #444;
     transition: color .12s ease-in-out;
 }
 
+.locationtext{
+    color: white;
+    background: #f09ad5;
+    float: right;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.phonetext{
+    float: right;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
 .about p{font-size: 16px;}
 
 .widget img {align-content: center;}
@@ -229,7 +245,7 @@ ul.mainMenu li a:hover {color: #444;
   overflow: hidden;
   border-radius: 50%;
 }
-.logobutton{height: 100px; margin-top: -20px;}
+.logobutton{height: 100px;}
 /*
 * Orange
 */
@@ -259,6 +275,7 @@ ul.mainMenu li a:hover {color: #444;
 .pinkboxborder p {color: ##333;text-align: center;font-size: 16px;}
 .whitecontent {width: 100%; float: left; clear: both; color: ##333; font-size: 16px; text-align: center; position: relative;z-index: 1; vertical-align: text-top !important;}
 .whitecontent br {line-height: 28px;}
+.whitecontentleft {width: 100%; float: left; clear: both; color: ##333; font-size: 16px; text-align: left; position: relative;z-index: 1; vertical-align: text-top !important;}
 
 /*
 * Gray
@@ -398,7 +415,7 @@ footer .social h5 {text-align: left;}
 .halfinputselect {width: 195px; margin-right: 18px;}
     .aboutphoto{width: 380px; height: auto;}
 .introimg{height: 100%; width: 100%}
-    .logobutton{height: 50px; margin-top: -20px;}
+    .logobutton{height: 50px;}
     .footerimg{width: 400px;}
     
     header .slogan .intro {display: none;}
@@ -443,7 +460,7 @@ footer .social h5 {text-align: left;}
 .halfinputselect {width: 145px; margin-right: 18px;}
     .aboutphoto{width: 280px; height: auto;}
 .introimg{height: 100%; width: 100%}
-    .logobutton{height: 40px; margin-top: -20px;}
+    .logobutton{height: 40px;}
     #bigimages {width: 300px;}
     #bigimages img {width: 300px;}
     .footerimg{width: 300px;}
