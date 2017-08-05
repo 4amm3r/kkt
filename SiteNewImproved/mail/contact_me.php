@@ -21,7 +21,7 @@ $servicesrequested = strip_tags(htmlspecialchars($_POST['servicesrequested']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
-$to = 'mikemallit@msn.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'nadia@kittykattime.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "New Kitty Kat Time Request";
 $addressline = "";
 $dateline = "";
