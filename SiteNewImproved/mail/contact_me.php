@@ -3,7 +3,6 @@
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
-   empty($_POST['message'])   ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
    echo "No arguments Provided!";
@@ -23,8 +22,55 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
 $to = 'mikemallit@msn.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Contact form confirmation";
-$email_body = "Name: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$email_subject = "New Kitty Kat Time Request";
+$addressline = "";
+$dateline = "";
+$serviceline = "";
+$messageline = "";
+
+if($street !== "" || $city !== "" || $zip !== ""){
+    $addressline = "Address: ";
+}
+if($street !== ""){
+    $addressline .= $street;
+    $addressline .= "\n";
+}
+if($city !== ""){
+    $addressline .= $city;
+    $addressline .= ", WA ";
+}
+if($zip !== ""){
+    $addressline .= $zip;
+    $addressline .= "\n\n";
+}
+else{
+    $addressline .= "\n\n";
+}
+if($startdate !== "" || $enddate !== ""){
+    $dateline = "Dates: ";
+}
+if($startdate !== ""){
+    $dateline .= $startdate;
+    $dateline .= " to ";
+}
+if($enddate !== ""){
+    $dateline .= $enddate;
+    $dateline .= "\n\n";
+}
+else if($startdate !== ""){
+    $dateline .= "\n\n";
+}
+if($servicesrequested !== ""){
+    $serviceline = "Service: ";
+    $serviceline .= $servicesrequested;
+    $serviceline .= "\n\n";
+}
+if($message !== ""){
+    $messageline = "Message: ";
+    $messageline .= $message;
+}
+
+$email_body = "Name: $name\n\nEmail: $email_address\n\nPhone: $phone\n\n$addressline$dateline$serviceline$messageline";
 $headers = "From: nadia@kittykattime.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
