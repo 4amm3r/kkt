@@ -26,7 +26,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: 'http://45.79.86.152:3000/emailimproved',
                 type: "POST",
                 data: {
                     name: name,
