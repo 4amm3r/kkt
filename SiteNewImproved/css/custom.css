@@ -80,6 +80,15 @@
     width: 50px;
 }
 
+.btn-pricing{
+    text-transform: none !important;
+    padding: 10px 30px !important;
+}
+
+.hand-cursor{
+    cursor: pointer;
+}
+
 /* When not phone specific */
 @media (min-width:768px) {
     .headerbg{

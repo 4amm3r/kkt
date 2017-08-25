@@ -29,5 +29,33 @@
             top: 100
         }
     })
+    
+    var recommendView = false;
+    $('#recommendationdiv').hide();
+    $('#recommendexpand').on('click', function(){
+        if(recommendView == false){                   
+            $('#recommendexpand').text('See Less');
+            $('#recommendationdiv').slideDown(1000);
+        }
+        else{                                       
+            $('#recommendexpand').text('See More');
+            $('#recommendationdiv').slideUp(1000);
+        }
+        recommendView = !recommendView;
+    });
+    
+    var testimonialView = false;
+    $('#testimonialdiv').hide();
+    $('#testimonialexpand').on('click', function(){
+        if(testimonialView == false){                   
+            $('#testimonialexpand').text('See Less');
+            $('#testimonialdiv').slideDown(1000);
+        }
+        else{                                       
+            $('#testimonialexpand').text('See More');
+            $('#testimonialdiv').slideUp(1000);
+        }
+        testimonialView = !testimonialView;
+    });
 
 })(jQuery); // End of use strict
